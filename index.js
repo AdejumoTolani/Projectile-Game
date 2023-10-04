@@ -201,7 +201,6 @@ function animate() {
           );
         }
         if (enemy.radius - 10 > 10) {
-          console.log(enemy.radius);
           count += 100;
           score.innerHTML = count;
 
@@ -209,7 +208,6 @@ function animate() {
           //   radius: enemy.radius - 10
           // })
           enemy.radius = enemy.radius - 10;
-          console.log(enemy.radius);
           setTimeout(() => {
             projectiles.splice(projectileIndex, 1);
           }, 0);
